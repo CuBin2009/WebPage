@@ -163,9 +163,8 @@ section {
   background: #eee;
 }
 .background img {
-  max-width: 500px;
+  min-width: 500px;
   height: 300px;
-  width: 100%;
 }
 
 .bg-desc {
@@ -236,7 +235,6 @@ section {
 .content-text {
   line-height: 2rem;
   max-width: 350px;
-  margin: 0 0 -1rem 15rem;
 }
 .content-text h3 {
   font-size: 2.5rem;
@@ -253,8 +251,7 @@ section {
   color: #667077;
 }
 .introduce img {
-  max-width: 100%;
-  vertical-align: middle;
+  min-width: 100%;
 }
 .customers {
   padding: 9rem;
@@ -412,3 +409,67 @@ section {
 }
 /* Responsive  */
 
+@media (max-width: 76.938rem) {
+  .bg-desc {
+    margin-left: 5rem;
+  }
+  .introduce {
+    position: relative;
+  }
+  .content-text {
+    font-size: 1.2rem;
+    margin-right: 2rem;
+  }
+  .img-content {
+    margin-left: -5rem;
+    position: absolute;
+    right: 15px;
+  }
+}
+
+@media (max-width: 90rem) {
+  .bg-desc {
+    font-size: 1rem;
+    margin-left: 5rem;
+    max-width: 350px;
+    width: 350px;
+  }
+  .content-text {
+    max-width: 500px;
+    width: 411px;
+    margin-right: 3rem;
+    position: relative;
+    left: -7.5rem;
+  }
+  .contact {
+    padding-left: 4rem;
+  }
+  .text-contact {
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 63.938rem) {
+  .navbar ul li {
+    font-size: 0.3rem;
+  }
+  .customers-logo {
+    display: block;
+    text-align: center;
+  }
+  .customers-logo img {
+    margin-right: 0.1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 49.125rem) {
+  .navbar {
+    display: none;
+  }
+  header .bx-menu {
+    display: block;
+    top: 50px;
+  }
+ 
+  
+}
